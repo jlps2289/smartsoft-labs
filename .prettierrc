@@ -8,6 +8,10 @@
 	"bracketSameLine": true,
 	"endOfLine": "auto",
 	"printWidth": 130,
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true,
+	"importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+	"plugins": ["@trivago/prettier-plugin-sort-imports"],
 	"importOrder": [
 		"^@angular/(.*)$",
 		"<THIRD_PARTY_MODULES>",
@@ -23,7 +27,5 @@
 		"^@/types/(.*)$",
 		"^@/(.*)$",
 		"^[./]"
-	],
-	"importOrderSeparation": true,
-	"importOrderSortSpecifiers": true
+	]
 }
