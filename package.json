@@ -8,9 +8,9 @@
 		"watch": "ng build --watch --configuration development",
 		"test": "ng test",
 		"format": "prettier --write .",
-		"hook": "husky install && yarn husky set .husky/pre-commit \"yarn pretty-quick --staged\"",
 		"lint": "ng lint",
-		"lint:fix": "ng lint --fix"
+		"lint:fix": "ng lint --fix",
+		"prepare": "husky"
 	},
 	"private": true,
 	"dependencies": {
