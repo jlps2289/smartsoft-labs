@@ -3,6 +3,19 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "npm:start:ide",
+			"type": "npm",
+			"script": "start:ide",
+			"icon": {
+				"id": "folder-active",
+				"color": "terminal.ansiGreen"
+			},
+			"runOptions": {
+				"runOn": "folderOpen"
+			},
+			"problemMatcher": []
+		},
+		{
 			"type": "npm",
 			"script": "start",
 			"isBackground": true,
