@@ -5,5 +5,8 @@
 	"editor.formatOnPaste": true,
 	"editor.formatOnSave": true,
 	"editor.formatOnType": true,
-	"editor.rulers": [130]
+	"editor.rulers": [130],
+	"files.associations": {
+		"*.scss": "tailwindcss"
+	}
 }
