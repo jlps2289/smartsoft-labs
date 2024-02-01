@@ -8,9 +8,9 @@ const ENCRYPT_IV = ENCRYPT.iv; // length: 22
 const ENCRYPT_KEY_SIZE = ENCRYPT.keySize; // size: 32
 
 /**
- * Encriptar la información.
- * @param payload Información a guardar.
- * @return Información encrypt.
+ * Encrypt info.
+ * @param payload Info to encrypt.
+ * @return Encrypt info string.
  */
 const encryptHelper = <T>(payload: T): string => {
 	const payloadString = JSON.stringify(payload);
@@ -30,9 +30,9 @@ const encryptHelper = <T>(payload: T): string => {
 };
 
 /**
- * Obtener el payload de la información encrypt.
- * @param encrypt String a desencriptar.
- * @return Información desencrypt.
+ * Get payload info.
+ * @param encrypt String desencrypt info.
+ * @return Parce encrypt info.
  */
 const desencryptHelper = <T>(encrypt: string): T | undefined => {
 	if (encrypt.trim() === '') {

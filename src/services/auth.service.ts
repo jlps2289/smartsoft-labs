@@ -25,7 +25,7 @@ export class AuthService {
 					const _password = 'Qwe@123';
 
 					if (username !== _username || password !== _password) {
-						return observer.error({ message: 'El usuario y/o la contraseña son inválidos.' });
+						return observer.error([{ message: 'El usuario y/o la contraseña son inválidos.', type: 'error' }]);
 					}
 
 					const token = 'cf1329fd-824d-4316-830d-6c31e9d3d77c';
