@@ -58,6 +58,8 @@ const desencryptHelper = <T>(encrypt: string): T | undefined => {
 		// eslint-disable-next-line no-console
 		console.error(err);
 	}
+
+	return;
 };
 
 export { encryptHelper, desencryptHelper };
