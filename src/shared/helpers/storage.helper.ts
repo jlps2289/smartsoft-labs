@@ -1,7 +1,7 @@
 // Helpers
 import { desencryptHelper, encryptHelper } from '@helpers/encrypt.helper';
 
-/** Llaves del storage. */
+/** Storage's keys */
 const keys: StorageKeys = {
 	token: encryptHelper('token'),
 	session: encryptHelper('session'),
