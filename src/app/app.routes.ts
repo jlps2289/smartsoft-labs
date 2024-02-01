@@ -12,7 +12,7 @@ import { PageNotFoundComponent } from '@views/page-not-found/page-not-found.comp
 export const routes: Routes = [
 	{
 		path: 'login',
-		title: `Iniciar Sesión ${TITLE_PAGE_SUFFIX}`,
+		title: `Iniciar sesión ${TITLE_PAGE_SUFFIX}`,
 		loadComponent: () => import('./login/login.component'),
 	},
 	{
