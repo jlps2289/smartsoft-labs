@@ -29,7 +29,6 @@
 			"@constants/*": ["shared/constants/*"],
 			"@helpers/*": ["shared/helpers/*"],
 			"@services/*": ["services/*"],
-			"@stores/*": ["stores/*"],
 			"@views/*": ["shared/ui/views/*"],
 		},
 	},
