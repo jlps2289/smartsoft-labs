@@ -3,6 +3,9 @@ import { Routes } from '@angular/router';
 // Constants
 import { TITLE_PAGE_SUFFIX } from '@constants/app-info.constant';
 
+// Views
+import { PageNotFoundComponent } from '@views/page-not-found/page-not-found.component';
+
 export const pageRoutes: Routes = [
 	{
 		path: '',
@@ -20,6 +23,7 @@ export const pageRoutes: Routes = [
 	},
 	{
 		path: '**',
-		redirectTo: '',
+		title: `Pagina no encontrada ${TITLE_PAGE_SUFFIX}`,
+		component: PageNotFoundComponent,
 	},
 ];
