@@ -14,7 +14,10 @@ Este proyecto se desarrollo de acuerdo a las especificaciones solicitadas en el 
 Este desarrollo se realizo con el [Angular][angular], el lenguaje de compilación es [TypeScript][typescript], [TailwindCss][tailwindcss] y [Angular Material][angular-material].
 
 <br />
-<img src='https://github.com/jochelo2289/smartsoft-labs-technical-test/assets/26493030/6688da34-8471-41af-8645-6d44f298c794' alt='screenshot' width='700' />
+
+<img src='https://github.com/jochelo2289/smartsoft-labs-technical-test/assets/26493030/6688da34-8471-41af-8645-6d44f298c794' alt='screenshot' width='600' />
+<img src='https://github.com/jochelo2289/smartsoft-labs-technical-test/assets/26493030/e1edd83b-2e6e-44ea-9e23-32ee74fe3904' alt='screenshot' width='600' />
+
 <br />
 
 </center>
