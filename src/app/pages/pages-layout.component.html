@@ -1,5 +1,11 @@
-<h1>Layout pages</h1>
+<mat-sidenav-container class="bg-red-200">
+	<app-navbar (toggleSidenav)="toggleSidenav()" />
+	<mat-sidenav [opened]="showSidenav"><app-sidenav (toggleSidenav)="toggleSidenav()" /></mat-sidenav>
 
-<img src="assets/images/brand/logo_smartsoftlabs.png" alt="" width="200" style="view-transition-name: smartsoftlabs" />
-<a routerLink="/login">closed</a>
-<router-outlet />
+	<main class="flex h-full min-h-screen w-full flex-col pt-20">
+		<div class="mx-auto w-full max-w-screen-xl flex-1 px-4">
+			<router-outlet />
+		</div>
+		<app-footer class="my-5 px-4 text-xs" style="view-transition-name: footer" />
+	</main>
+</mat-sidenav-container>
