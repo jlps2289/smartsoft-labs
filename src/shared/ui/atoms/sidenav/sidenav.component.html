@@ -1,5 +1,16 @@
-<div
-	class="h-full min-h-screen w-full max-w-[300px] border-r border-solid border-gray-200 bg-gradient-to-l from-gray-100 to-transparent shadow-sm">
-	Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis aspernatur eligendi ratione nam facilis ipsum voluptatem!
-	Laboriosam veritatis at facere, iure fuga consequatur est placeat ullam, quo, veniam id commodi?
+<div class="h-full min-h-screen w-[300px] bg-gradient-to-l from-gray-100 to-white shadow-sm">
+	<div class="relative mb-4 grid place-items-center border-b border-gray-200 bg-gray-100 px-4 pb-6 pt-10">
+		<mat-icon class="absolute right-2 top-4 cursor-pointer text-sm text-gray-500" (click)="onClosedMenu()">close</mat-icon>
+		<a class="transition-transform hover:scale-105" routerLink="" (click)="onClosedMenu()">
+			<img src="assets/images/brand/logo_smartsoftlabs.png" alt="SmartSoftLabs Logo" width="200" />
+		</a>
+	</div>
+	<div class="flex flex-col">
+		<a class="item-menu" routerLink="import-csv" routerLinkActive="active" (click)="onClosedMenu()"
+			><mat-icon>attach_file</mat-icon> Analizar CSV</a
+		>
+		<a class="item-menu" routerLink="crud" routerLinkActive="active" (click)="onClosedMenu()"
+			><mat-icon>description</mat-icon> Formulario</a
+		>
+	</div>
 </div>

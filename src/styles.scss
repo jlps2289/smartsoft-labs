@@ -37,3 +37,30 @@ body {
 }
 
 // #endregion
+// #region Custom class
+
+.item-menu {
+	@apply flex gap-1 px-4 py-3 transition-colors;
+
+	mat-icon {
+		@apply text-gray-400;
+	}
+
+	&:hover:not(.active) {
+		@apply bg-gray-200 text-primary-900;
+
+		mat-icon {
+			@apply text-primary-900;
+		}
+	}
+}
+
+.active {
+	@apply bg-primary-700 text-white;
+
+	mat-icon {
+		@apply text-primary-100;
+	}
+}
+
+// #endregion

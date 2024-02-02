@@ -99,9 +99,9 @@ Estos son los puntos a tener en cuenta en el desarrollo de la aplicación:
       - [ ] Editar
       - [ ] Borrar
 
-- [ ] Implementar diseño layout
+- [x] Implementar diseño layout
   - [x] Navbar
-  - [ ] Sidenav
+  - [x] Sidenav
   - [x] Footter
   - [x] Content
 - [x] Implementar guardianes
