@@ -3,7 +3,9 @@
 		<img class="mx-auto mb-10 w-full max-w-[450px]" src="assets/images/interfaces/illustrations/hello.svg" alt="Bienvenido" />
 		<h1 class="mb-10 text-balance text-3xl text-primary-700">
 			¡Bienvenido <strong>{{ user?.fullname }}</strong> a SmartSoft Labs!
-			<small class="block font-light text-gray-400">{{ user?.nickname }}<{{ user?.email }}></small>
+			<small class="mx-auto block max-w-[200px] overflow-hidden text-ellipsis font-light text-gray-400 md:max-w-full">{{
+				user?.email
+			}}</small>
 		</h1>
 		<p class="mb-7 max-w-[75ch] text-pretty font-light text-gray-600">
 			Estamos emocionados de tenerte aquí. En nuestra app, encontrarás un mundo de posibilidades al alcance de tus manos.
