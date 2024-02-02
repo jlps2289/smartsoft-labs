@@ -4,6 +4,7 @@ import { Routes } from '@angular/router';
 import { TITLE_PAGE_SUFFIX } from '@constants/app-info.constant';
 
 // Views
+import { BuildingComponent } from '@views/building/building.component';
 import { PageNotFoundComponent } from '@views/page-not-found/page-not-found.component';
 
 export const pageRoutes: Routes = [
@@ -14,12 +15,14 @@ export const pageRoutes: Routes = [
 	{
 		path: 'import-csv',
 		title: `Importar CSV ${TITLE_PAGE_SUFFIX}`,
-		loadComponent: () => import('./import-csv/import-csv.component'),
+		// loadComponent: () => import('./import-csv/import-csv.component'),
+		component: BuildingComponent,
 	},
 	{
 		path: 'crud',
 		title: `CRUD ${TITLE_PAGE_SUFFIX}`,
-		loadComponent: () => import('./crud/crud.component'),
+		// loadComponent: () => import('./crud/crud.component'),
+		component: BuildingComponent,
 	},
 	{
 		path: '**',
