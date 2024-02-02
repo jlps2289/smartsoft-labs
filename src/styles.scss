@@ -29,3 +29,11 @@ body {
 	font-family: Roboto, 'Helvetica Neue', sans-serif;
 	scroll-behavior: smooth;
 }
+
+//#region Custom Angular Material
+
+.mat-drawer-backdrop {
+	backdrop-filter: blur(3px);
+}
+
+// #endregion

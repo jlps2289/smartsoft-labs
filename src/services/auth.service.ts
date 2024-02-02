@@ -29,7 +29,7 @@ export class AuthService {
 					}
 
 					const token = 'cf1329fd-824d-4316-830d-6c31e9d3d77c';
-					const user = { email: _username, fullname: 'Jose Luis Parra Sánchez', nickname: 'jose.parra' };
+					const user = { email: _username, fullname: 'Jose Luis', nickname: 'jose.parra' };
 
 					setItem(keys.token, token);
 					setItem<Session>(keys.session, { user, token });

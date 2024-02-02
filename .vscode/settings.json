@@ -5,5 +5,11 @@
 	"editor.formatOnPaste": true,
 	"editor.formatOnSave": true,
 	"editor.formatOnType": true,
-	"editor.rulers": [130]
+	"editor.rulers": [130],
+	"angular-schematics.schematicsDefaultOptions": {
+		"angular-*": {
+			"externalTemplate": true,
+			"inlineStyle": true
+		}
+	}
 }

@@ -1,0 +1,38 @@
+<nav class="fixed top-0 z-50 w-screen border-b border-solid border-gray-100 bg-white/75 py-4 shadow-sm backdrop-blur-sm">
+	<div class="mx-auto flex w-full max-w-screen-xl items-center px-4">
+		<button class="me-auto md:me-2" mat-icon-button matTooltip="Abrir menú">
+			<mat-icon>menu</mat-icon>
+		</button>
+
+		<a routerLink="/app">
+			<img
+				src="assets/images/brand/logo_smartsoftlabs.png"
+				alt="SmartSoftLabs Logo"
+				width="130"
+				style="view-transition-name: smartsoftlabs" />
+		</a>
+
+		<div class="ms-auto">
+			<img
+				class="size-10 cursor-pointer rounded-full p-[2px] ring-2 ring-primary-900 transition-all hover:ring-4 active:ring-2"
+				type="button"
+				src="assets/images/interfaces/user-default.webp"
+				alt="User images"
+				[matMenuTriggerFor]="menu" />
+		</div>
+	</div>
+</nav>
+
+<mat-menu #menu="matMenu">
+	<div class="mb-2 border-b border-solid border-gray-200 px-4 py-5">
+		<h3 class="m-0 text-primary-700">
+			¡Bienvenido <strong>{{ user?.fullname }}</strong
+			>!
+		</h3>
+		<small class="text-gray-500">{{ user?.nickname }}<{{ user?.email }}></small>
+	</div>
+	<button mat-menu-item (click)="onLogout()">
+		<mat-icon>logout</mat-icon>
+		<span>Cerrar sesión</span>
+	</button>
+</mat-menu>
