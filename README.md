@@ -1,5 +1,7 @@
 <center>
 
+<img src='https://github.com/jochelo2289/smartsoft-labs-technical-test/assets/26493030/da83235e-a90c-4a68-a5d6-2e79a734a973' alt='logo_smartsoftlabs' width='250'>
+
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 223 236" width="60"><g clip-path="url(#a)"><path fill="url(#b)" d="m222.077 39.192-8.019 125.923L137.387 0l84.69 39.192Zm-53.105 162.825-57.933 33.056-57.934-33.056 11.783-28.556h92.301l11.783 28.556ZM111.039 62.675l30.357 73.803H80.681l30.358-73.803ZM7.937 165.115 0 39.192 84.69 0 7.937 165.115Z"></path><path fill="url(#c)" d="m222.077 39.192-8.019 125.923L137.387 0l84.69 39.192Zm-53.105 162.825-57.933 33.056-57.934-33.056 11.783-28.556h92.301l11.783 28.556ZM111.039 62.675l30.357 73.803H80.681l30.358-73.803ZM7.937 165.115 0 39.192 84.69 0 7.937 165.115Z"></path></g><defs><linearGradient id="b" x1="49.009" x2="225.829" y1="213.75" y2="129.722" gradientUnits="userSpaceOnUse"><stop stop-color="#E40035"></stop><stop offset=".24" stop-color="#F60A48"></stop><stop offset=".352" stop-color="#F20755"></stop><stop offset=".494" stop-color="#DC087D"></stop><stop offset=".745" stop-color="#9717E7"></stop><stop offset="1" stop-color="#6C00F5"></stop></linearGradient><linearGradient id="c" x1="41.025" x2="156.741" y1="28.344" y2="160.344" gradientUnits="userSpaceOnUse"><stop stop-color="#FF31D9"></stop><stop offset="1" stop-color="#FF5BE1" stop-opacity="0"></stop></linearGradient><clipPath id="a"><path fill="#fff" d="M0 0h223v236H0z"></path></clipPath></defs></svg>
 
 # SmartSoft Labs | Prueba Técnica Frontend
@@ -11,8 +13,11 @@ Este proyecto se desarrollo de acuerdo a las especificaciones solicitadas en el 
 
 Este desarrollo se realizo con el [Angular][angular], el lenguaje de compilación es [TypeScript][typescript], [TailwindCss][tailwindcss] y [Angular Material][angular-material].
 
-</center>
+<br />
+<img src='https://github.com/jochelo2289/smartsoft-labs-technical-test/assets/26493030/6688da34-8471-41af-8645-6d44f298c794' alt='screenshot' width='700' />
+<br />
 
+</center>
 
 ---
 <br />
@@ -32,6 +37,45 @@ Antes de iniciar con el desarrollo, es importante tener instaladas las siguiente
 ---
 
 <br>
+
+# 🏁 Guía de Inicio Rápido
+
+> [!WARNING]
+> El proyecto incluye extensiones, configuraciones y tareas automáticas para ejecutar en el editor [Visual Studio Code](https://code.visualstudio.com/) y hay una tarea que; al abrir el proyecto en el editor, ejecuta el comando `npm start`. Por lo tanto se recomienda realizar las instalaciones antes de abrir el proyecto en el edito.
+
+Antes de iniciar el desarrollo se debe instalar las dependencias del proyecto ejecutando el comando `npm install` desde la carpeta raíz del proyecto. Al realizar la instalación el proyecto ejecuta automáticamente la instalación de los hooks de git para aplicar los formatos con el hook `pre-commit`.
+
+## Scripts validos de ejecución para el proyecto
+
+En el directorio del proyecto se pueden ejecutar los siguientes scripts:
+
+### `npm start` o `ng serve -o`
+
+Corre la aplicación en modo development.\
+Automáticamente se abrirá la url [http://localhost:2289/](http://localhost:2289/) para ver la aplicación corriendo en el navegador en el ambiente de desarrollo (development).
+
+### `npm run build`
+
+Compilar el proyecto para producción y se generan los archivos en la carpeta `dist/`.
+
+## Otros scripts validos
+
+| Script             | Descripción                                                                                                       |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| `npm run test`     | Correr las pruebas unitarias.                                                                                     |
+| `npm run format`   | Aplicar el formato con las configuraciones del [Prettier](https://prettier.io/) a todo el proyecto.               |
+| `npm run lint`     | Verificar errores del código por medio de [EsLint](https://eslint.org/) a todo el proyecto.                       |
+| `npm run lint:fix` | Verificar errores y aplicar correcciones al código por medio de [EsLint](https://eslint.org/) a todo el proyecto. |
+
+> [!TIP]
+> Por medio del pre-commit se ejecutan los commandos `npm run lint:fix` y `npm run format` antes de realizar algún commit al proyecto.
+
+<br>
+
+---
+
+<br>
+
 
 ## 👨🏻‍💻 Requisitos de la Prueba
 
@@ -67,46 +111,13 @@ Estos son los puntos a tener en cuenta en el desarrollo de la aplicación:
 - [x] Implementar Angular Material.
 - [x] Lazy loading
 
+#### Recomendaciones y Opcionales
 
-
-<br>
-
----
-
-<br>
-
-
-# 🏁 Guía de Inicio Rápido
-
-> [!WARNING]
-> El proyecto incluye extensiones, configuraciones y tareas automáticas para ejecutar en el edito [Visual Studio Code](https://code.visualstudio.com/) y hay una tarea que al abrir el proyecto en el edito ejecuta el comando `npm start`. Por lo tanto es recomendable realizar primero las instalaciones antes de abrir el proyecto.
-
-Antes de iniciar el desarrollo se debe instalar las dependencias del proyecto ejecutando el comando `npm install` desde la carpeta raíz del proyecto. Al realizar la instalación el proyecto ejecuta automáticamente la instalación de los hooks de git para aplicar los formatos con el hook `pre-commit`.
-
-## Scripts validos de ejecución para el proyecto
-
-En el directorio del proyecto se pueden ejecutar los siguientes scripts:
-
-### `npm start` o `ng serve -o`
-
-Corre la aplicación en modo development.\
-Automáticamente se abrirá la url [http://localhost:2289/](http://localhost:2289/) para ver la aplicación corriendo en el navegador en el ambiente de desarrollo (development).
-
-### `npm run build`
-
-Compilar el proyecto para producción y se generan los archivos en la carpeta `dist/`.
-
-## Otros scripts validos
-
-| Script             | Descripción                                                                                                       |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| `npm run test`     | Correr las pruebas unitarias.                                                                                     |
-| `npm run format`   | Aplicar el formato con las configuraciones del [Prettier](https://prettier.io/) a todo el proyecto.               |
-| `npm run lint`     | Verificar errores del código por medio de [EsLint](https://eslint.org/) a todo el proyecto.                       |
-| `npm run lint:fix` | Verificar errores y aplicar correcciones al código por medio de [EsLint](https://eslint.org/) a todo el proyecto. |
-
-> [!TIP]
-> Por medio del pre-commit se ejecutan los commandos `npm run lint:fix` y `npm run format` antes de realizar algún commit al proyecto.
+- [ ] Implementar testing unitario en Karma/Jasmine
+- [x] Mobile first.
+- [x] Responsive mobile landscape.
+- [x] Implementar atomic design o similar.
+- [x] Utilizar el logro empresarial como referencia.
 
 <br>
 
@@ -169,6 +180,27 @@ El proyecto esta enfocado en un crecimiento modular y en el consumo de microserv
 |                                               #
 └───── 
 ```
+
+<br />
+---
+<br />
+
+## Curiosidades
+
+- El proyecto incluye 2 helpers para; uno encrypta y desencrypta información y otro para la gestión del storage del navegador usando el helper de encryptar, y se hace para encryptar desde la keys del storage como sus valores:
+
+![Encrypt Storage](https://github.com/jochelo2289/smartsoft-labs-technical-test/assets/26493030/11737734-d767-43d5-90f8-1c709e4347dc)
+
+- El login trae información diligenciada porque se emula un error en el login:
+
+![Error auth](https://github.com/jochelo2289/smartsoft-labs-technical-test/assets/26493030/c1dce246-494b-435e-9049-f1f1cb902b86)
+
+- La aplicación incluye una vista para páginas no encontradas:
+
+![Page not found](https://github.com/jochelo2289/smartsoft-labs-technical-test/assets/26493030/05863068-3306-43bc-ab69-04ce15efae09)
+
+
+
 
 <!-- Requisitos -->
 
