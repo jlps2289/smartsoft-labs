@@ -25,11 +25,11 @@ export class AuthService {
 					const _password = 'Qwe@123';
 
 					if (username !== _username || password !== _password) {
-						return observer.error([{ message: 'El usuario y/o la contraseña son inválidos.', type: 'error' }]);
+						return observer.error({ message: 'El usuario y/o la contraseña son inválidos.' });
 					}
 
 					const token = 'cf1329fd-824d-4316-830d-6c31e9d3d77c';
-					const user = { email: 'demo', fullname: 'demos', nickname: 'demos' };
+					const user = { email: _username, fullname: 'Jose Luis Parra Sánchez', nickname: 'jose.parra' };
 
 					setItem(keys.token, token);
 					setItem<Session>(keys.session, { user, token });
