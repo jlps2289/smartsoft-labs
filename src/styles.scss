@@ -1,3 +1,23 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$smartsoft-labs-primary: mat.define-palette(mat.$cyan-palette, 900);
+$smartsoft-labs-accent: mat.define-palette(mat.$cyan-palette, 700);
+$smartsoft-labs-warn: mat.define-palette(mat.$red-palette);
+
+$smartsoft-labs-theme: mat.define-light-theme(
+	(
+		color: (
+			primary: $smartsoft-labs-primary,
+			accent: $smartsoft-labs-accent,
+			warn: $smartsoft-labs-warn,
+		),
+	)
+);
+
+@include mat.all-component-themes($smartsoft-labs-theme);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,8 +25,7 @@
 html,
 body {
 	height: 100%;
-}
-body {
 	margin: 0;
 	font-family: Roboto, 'Helvetica Neue', sans-serif;
+	scroll-behavior: smooth;
 }

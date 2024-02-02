@@ -1,1 +1,47 @@
-<p>login works!</p>
+<main class="grid min-h-screen place-items-center px-4 py-20">
+	<section class="w-full max-w-[400px] text-center">
+		<img
+			class="mx-auto mb-10 w-full max-w-[250px]"
+			src="assets/images/brand/logo_smartsoftlabs.png"
+			alt="Logo SmartSoft Labs"
+			style="view-transition-name: smartsoftlabs" />
+		<form class="mb-16" [formGroup]="form" (ngSubmit)="onSubmit()">
+			<div class="mb-4 w-full">
+				<mat-form-field class="w-full" appearance="fill">
+					<mat-label>Usuario</mat-label>
+					<input matInput placeholder="user@example.com" type="email" formControlName="username" />
+					<mat-icon class="text-gray-400" matSuffix>account_circle</mat-icon>
+					<mat-error>
+						<app-field-message-errors [form]="form" field="username" [isSubmit]="isSubmit" />
+					</mat-error>
+				</mat-form-field>
+			</div>
+
+			<div class="mb-4 w-full">
+				<mat-form-field class="w-full" appearance="fill">
+					<mat-label>Contraseña</mat-label>
+					<input matInput placeholder="..." [type]="hide ? 'password' : 'text'" formControlName="password" />
+					<button
+						mat-icon-button
+						matSuffix
+						type="button"
+						(click)="hide = !hide"
+						[attr.aria-label]="'Ocultar contraseña'"
+						[attr.aria-pressed]="hide">
+						<mat-icon class="text-gray-400">{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+					</button>
+					<mat-error>
+						<app-field-message-errors [form]="form" field="password" [isSubmit]="isSubmit" />
+					</mat-error>
+				</mat-form-field>
+			</div>
+
+			<button class="w-full" mat-flat-button color="primary" type="submit">Iniciar sesión</button>
+			<app-mutation-status [mutation]="mutation" />
+		</form>
+		<app-footer style="view-transition-name: footer" />
+	</section>
+</main>
+
+<div
+	class="fixed inset-0 -z-10 size-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#036064_100%)]"></div>
