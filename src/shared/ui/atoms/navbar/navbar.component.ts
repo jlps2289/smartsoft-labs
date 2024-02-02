@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Output, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
@@ -26,6 +26,8 @@ import { getItem, keys } from '@/shared/helpers/storage.helper';
 export class NavbarComponent {
 	user?: User = getItem<Session>(keys.session)?.user;
 	logout = inject(AuthService).logout();
+
+	@Output() toggleSidenav = new EventEmitter<void>();
 
 	onLogout() {
 		this.logout.mutate(null);
