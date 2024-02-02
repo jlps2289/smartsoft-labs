@@ -15,6 +15,12 @@ Este desarrollo se realizo con el [Angular][angular], el lenguaje de compilació
 
 <br />
 
+
+[![Github Pages Deploy](https://github.com/jochelo2289/smartsoft-labs-technical-test/actions/workflows/deploy.yml/badge.svg)](https://github.com/jochelo2289/smartsoft-labs-technical-test/actions/workflows/deploy.yml)
+[![pages-build-deployment](https://github.com/jochelo2289/smartsoft-labs-technical-test/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/jochelo2289/smartsoft-labs-technical-test/actions/workflows/pages/pages-build-deployment)
+
+https://jochelo2289.github.io/smartsoft-labs-technical-test/
+
 <img src='https://github.com/jochelo2289/smartsoft-labs-technical-test/assets/26493030/6688da34-8471-41af-8645-6d44f298c794' alt='screenshot' width='600' />
 <img src='https://github.com/jochelo2289/smartsoft-labs-technical-test/assets/26493030/e1edd83b-2e6e-44ea-9e23-32ee74fe3904' alt='screenshot' width='600' />
 
