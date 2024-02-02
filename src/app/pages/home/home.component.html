@@ -1,1 +1,28 @@
-<p>home works!</p>
+<div class="grid place-items-center px-4 py-20">
+	<section class="max-w-[650px] text-center">
+		<img class="mx-auto mb-10 w-full max-w-[450px]" src="assets/images/interfaces/illustrations/hello.svg" alt="Bienvenido" />
+		<h1 class="mb-10 text-balance text-3xl text-primary-700">
+			¡Bienvenido <strong>{{ user?.fullname }}</strong> a SmartSoft Labs!
+			<small class="block font-light text-gray-400">{{ user?.nickname }}<{{ user?.email }}></small>
+		</h1>
+		<p class="mb-7 max-w-[75ch] text-pretty font-light text-gray-600">
+			Estamos emocionados de tenerte aquí. En nuestra app, encontrarás un mundo de posibilidades al alcance de tus manos.
+			Explora, descubre y disfruta de las siguientes acciones:
+		</p>
+
+		<div class="mx-auto flex max-w-[400px] flex-col gap-4 md:max-w-full md:flex-row">
+			<app-card-link
+				class="flex-1"
+				routerLink="import-csv"
+				icon="attach_file"
+				title="Analizar CSV"
+				description="Analizar documento y verifica la información." />
+			<app-card-link
+				class="flex-1"
+				routerLink="crud"
+				icon="description"
+				title="Formulario"
+				description="Consulta, crea, edita o remueve información." />
+		</div>
+	</section>
+</div>
