@@ -1,0 +1,42 @@
+@endpoint = https://65bd6734b51f9b29e9336714.mockapi.io/api/v1
+@contentType = application/json
+
+
+### @name DocumentTypes
+GET {{endpoint}}/document-type
+
+### @name Contacts
+GET  {{endpoint}}/contacts
+	?page=5
+	&limit=10
+
+### @name ContactById
+GET {{endpoint}}/contacts/1
+
+### @name CreateContact
+POST {{endpoint}}/contacts
+Content-Type: {{contentType}}
+
+# {
+#   "name": "Jose Luis",
+#   "documentNumber": 1075236231,
+#   "email": "jose.parra@yahoo.com",
+#   "phone": "(878) 973-3051 x8745",
+#   "country": "Colombia",
+#   "documentTypeId": "1"
+# }
+
+### @name UpdateContactById
+PUT {{endpoint}}/contacts/1
+Content-Type: {{contentType}}
+
+{
+  "name": "Jose Luis",
+  "documentNumber": "{{$randomInt 1000000 9999999}}",
+  "email": "jose.parra@smartsoft-labs.com",
+  "country": "Colombia",
+  "documentTypeId": "1"
+}
+
+### @name DeleteContactById
+DELETE {{endpoint}}/contacts/44

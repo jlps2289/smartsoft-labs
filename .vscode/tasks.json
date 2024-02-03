@@ -3,19 +3,6 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "npm:start",
-			"type": "npm",
-			"script": "start",
-			"icon": {
-				"id": "folder-active",
-				"color": "terminal.ansiGreen"
-			},
-			"runOptions": {
-				"runOn": "folderOpen"
-			},
-			"problemMatcher": []
-		},
-		{
 			"type": "npm",
 			"script": "start",
 			"isBackground": true,
@@ -49,6 +36,18 @@
 						"regexp": "bundle generation complete"
 					}
 				}
+			}
+		},
+		{
+			"label": "npm:start:open",
+			"type": "npm",
+			"script": "start",
+			"icon": {
+				"id": "folder-active",
+				"color": "terminal.ansiGreen"
+			},
+			"runOptions": {
+				"runOn": "folderOpen"
 			}
 		}
 	]
